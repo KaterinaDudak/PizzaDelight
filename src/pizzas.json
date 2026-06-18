@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Margarita",
+    "price": 245,
+    "imgUrl": "./src/assets/images/goods/margarita.jpg",
+    "descr": "America's favorite topped with pepperoni slices, mozzarella, and tomato sauce."
+  },
+  {
+    "id": 2,
+    "title": "Carbonara",
+    "price": 340,
+    "imgUrl": "./src/assets/images/goods/karbonara.jpg",
+    "descr": "Mustard sauce and Carbonara sauce, mozzarella cheese, crispy bacon, juicy ham, onion and parmesan cheese, garlic oil"
+  },
+  {
+    "id": 3,
+    "title": "Pepperoni",
+    "price": 295,
+    "imgUrl": "./src/assets/images/goods/pepperoni.jpg",
+    "descr": "Pomodoro sauce, Mozzarella cheese, salami"
+  },
+  {
+    "id": 4,
+    "title": "Barbecue",
+    "price": 340,
+    "imgUrl": "./src/assets/images/goods/karbonara.jpg",
+    "descr": "Barbecue sauce, mozzarella cheese, mushrooms, onions, bacon, pork and fresh parsley"
+  },
+  {
+    "id": 5,
+    "title": "Americano",
+    "price": 330,
+    "imgUrl": "./src/assets/images/goods/americano.jpg",
+    "descr": "Barbecue sauce, mozzarella cheese, mushrooms, onions, bacon, pork and fresh parsley"
+  },
+  {
+    "id": 6,
+    "title": "Four cheeses",
+    "price": 375,
+    "imgUrl": "./src/assets/images/goods/fourCheeses.png",
+    "descr": "Cream sauce, Mozzarella cheese, Dor Blue cheese, Feta cheese, Parmezan cheese and italian herbs"
+  },
+  {
+    "id": 7,
+    "title": "Meat Boom",
+    "price": 335,
+    "imgUrl": "./src/assets/images/goods/meatBoom.jpg",
+    "descr": "Cream sauce, Mozzarella cheese, Dor Blue cheese, Feta cheese, Parmezan cheese and italian herbs"
+  }
+]

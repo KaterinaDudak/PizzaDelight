@@ -1,0 +1,27 @@
+.banner {
+  width: 100%;
+  height: auto;
+//   min-height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 116px 0;
+  color: var(--color-white);
+  text-align: center;
+
+  h2 {
+    font-family: var(--third-family);
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  p {
+    color: var(--color-white);
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+  }
+}
