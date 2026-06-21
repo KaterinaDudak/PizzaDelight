@@ -26,7 +26,7 @@ const Form = () => {
     };
     
     return (
-      <form className={styles.form} onSubmit={handleSubmit}>
+      <form className={`${styles.form} container`} onSubmit={handleSubmit}>
         <h2 className={styles.formHeader}>Send Us a Message</h2>
 
         <div className={styles.inputGroup}>
