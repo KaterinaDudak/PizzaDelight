@@ -1,0 +1,65 @@
+.form {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+  .formHeader {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: var(--font-family);
+  }
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+
+  label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #555;
+    font-family: var(--font-family);
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-red); // Підсвічування вашим фірмовим червоним кольором
+    }
+  }
+
+  textarea {
+    resize: vertical; // дозволяє тягнути віконце тільки вниз
+  }
+}
+
+.submitBtn {
+  background-color: var(--color-red);
+  color: var(--color-white);
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

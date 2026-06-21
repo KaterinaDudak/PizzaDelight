@@ -70,7 +70,11 @@ const PizzaItem = ({ pizza, id, isOpen, onToggle, onAddToCart }) => {
   return (
     <li className={styles.item}>
       <div className={styles.button} onClick={onToggle}>
-        <img src={pizza.imgUrl} alt={pizza.title} className={styles.imgSmall} />
+        <img
+          src={`${import.meta.env.BASE_URL}${pizza.imgUrl}`}
+          alt={pizza.title}
+          className={styles.imgSmall}
+        />
         <div>
           <h3 className={styles.title}>{pizza.title}</h3>
           <p className={styles.descr}>{pizza.descr}</p>
@@ -80,7 +84,7 @@ const PizzaItem = ({ pizza, id, isOpen, onToggle, onAddToCart }) => {
       <div className={`${styles.collapse} ${isOpen ? styles.open : ""}`}>
         <div className={styles.body}>
           <img
-            src={pizza.imgUrl}
+            src={`${import.meta.env.BASE_URL}${pizza.imgUrl}`}
             alt={pizza.title}
             className={styles.imgLarge}
           />

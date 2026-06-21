@@ -18,14 +18,44 @@ const Cart = () => {
   
   const handleRemoveItem = (cartId) => {
     const updatedCart = cartItems.filter((item) => item.cartId !== cartId);
-    setCartItems(updatedCart);
+    setCartItems([...updatedCart]);
     localStorage.setItem("pizza_cart", JSON.stringify(updatedCart)); 
+
+    setTimeout(() => {
+      window.dispatchEvent(new Event("cartUpdate"));
+    }, 10);
   };
 
 
   const handleClearCart = () => {
     setCartItems([]);
     localStorage.removeItem("pizza_cart");
+
+    setTimeout(() => {
+      window.dispatchEvent(new Event("cartUpdate"));
+    }, 10);
+  };
+
+  const handleCheckout = () => {
+    
+    const orderDetails = {
+      items: cartItems.map((item) => ({
+        title: item.title,
+        quantity: item.quantity,
+        size: item.size,
+        price: item.price,
+      })),
+      total: totalPrice,
+      date: new Date().toISOString(),
+    };
+
+    console.log("Sending order to server:", orderDetails);
+
+    alert(
+      `Thank you for your order! Total paid: $${totalPrice}. Your pizza is already cooking!`
+    );
+
+    handleClearCart();
   };
 
   return (
@@ -48,7 +78,7 @@ const Cart = () => {
               return (
                 <li key={item.cartId} className={styles.cartItem}>
                   <img
-                    src={item.imgUrl}
+                    src={`${import.meta.env.BASE_URL}${item.imgUrl}`}
                     alt={item.title}
                     className={styles.cartImg}
                   />
@@ -86,7 +116,9 @@ const Cart = () => {
               <span>Total payable:</span>
               <strong>${totalPrice}</strong>
             </div>
-            <button className={styles.orderBtn}>Checkout</button>
+            <button className={styles.orderBtn} onClick={handleCheckout}>
+              Checkout
+            </button>
 
             <div className={styles.cartHeader}>
               <button onClick={handleClearCart} className={styles.clearBtn}>

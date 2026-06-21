@@ -5,6 +5,17 @@
   padding: 30px 0;
   position: relative;
   min-height: 900px;
+  margin-top: 80px;
+
+   @media screen and (max-width: 1024px) {
+    padding: 0 15px;
+    margin-bottom: 30px;
+  }
+    @media screen and (max-width: 640px) {
+      height: auto;
+      
+      
+    }
 
 }
 
@@ -21,6 +32,22 @@
   align-items: start;
   gap: 16px;
 
+  @media screen and (max-width: 1024px) {
+    max-width: 250px;
+  }
+  @media screen and (max-width: 800px) {
+    max-width: 250px;
+  }
+   @media screen and (max-width: 768px) {
+     max-width: 250px;
+  }
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    max-width: 600px;
+    display: none;
+  }
+
 
 }
 .body {
@@ -30,15 +57,30 @@
   border-top: 8px solid var(--color-red);
   border-radius: 18px;
   box-shadow: -4px 0 4px 0 rgba(0, 0, 0, 0.08);
-  background: rgba(185, 185, 185, 0.06);
+  background-color: var(--color-white);
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
+  max-width: 600px;
+
+
+  @media screen and (max-width: 1024px) {
+    max-width: 500px;
+  }
+  @media screen and (max-width: 768px) {
+     max-width: 350px;
+     margin-right: 15px;
+  }
+  @media screen and (max-width: 640px) {
+    max-width: 640px;
+  
+  }
 
   img {
     margin: 0 auto;
+    width: 100%;
   }
 
   h3 {
@@ -46,6 +88,10 @@
     font-weight: 700;
     font-size: 32px;
     margin-bottom: 12px;
+
+     @media screen and (max-width: 800px) {
+     margin-bottom: 10px;
+    }
   }
   p {
     font-family: var(--font-family);
@@ -55,6 +101,11 @@
     max-width: 520px;
     width: 100%;
     margin-bottom: 12px;
+    max-width: 500px;
+
+     @media screen and (max-width: 800px) {
+      max-width: 400px;
+    }
   }
 
    
@@ -66,6 +117,16 @@
   position: absolute;
   right: 0;
   top: 30px;
+
+    @media screen and (max-width: 1024px) {
+     top: 0;  
+    }
+
+    @media screen and (max-width: 640px) {
+     height: auto;
+     position: relative;
+    
+    }
 
 }
 .collapse.open {
@@ -79,8 +140,15 @@
   max-width: 450px;
   margin-bottom: 0;
 
+ @media screen and (max-width: 800px) {
+     max-width: 330px;
+  }
+
    @media screen and (max-width: 768px) {
     max-width: 300px;
+  }
+  @media screen and (max-width: 640px) {
+    max-width: 250px;
   }
 }
 .title {
@@ -89,6 +157,10 @@
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 8px;
+
+   
+
+ 
 }
 .descr {
   font-family: var(--font-family);
@@ -109,10 +181,16 @@
 .sizes {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Исправлен синтаксис гридов */
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 20px;
   column-gap: 20px;
   padding-left: 0;
+
+  @media screen and (max-width: 800px) {
+      row-gap: 15px;
+     column-gap: 15px;
+     grid-template-columns: 1fr;
+    }
 
   li {
     position: relative;
@@ -162,6 +240,16 @@
   align-items: center;
   padding: 30px 0;
   width: 500px;
+
+    @media screen and (max-width: 1024px) {
+     width: 400px;
+    }
+
+  @media screen and (max-width: 800px) {
+     flex-direction: column;
+     gap: 20px;
+     align-items: start;
+    }
 
   h4 {
     font-family: var(--font-family);

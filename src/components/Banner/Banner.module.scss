@@ -1,7 +1,6 @@
 .banner {
   width: 100%;
   height: auto;
-//   min-height: 500px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,6 +8,7 @@
   padding: 116px 0;
   color: var(--color-white);
   text-align: center;
+  margin-top: 80px;
 
   h2 {
     font-family: var(--third-family);

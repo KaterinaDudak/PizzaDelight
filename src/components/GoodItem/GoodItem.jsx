@@ -11,7 +11,7 @@ const GoodItem = (props) => {
     <li className={styles.card}>
   
       <div className={styles.imageWrapper}>
-        <img src={imgUrl} alt={title} className={styles.image} />
+        <img src={`${import.meta.env.BASE_URL}${imgUrl}`} alt={title} className={styles.image} />
       </div>
 
       <div className={styles.content}>
